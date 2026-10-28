@@ -1440,7 +1440,7 @@
         if (!copyButton) return;
         
         try {
-          copyButton.textContent = 'hello@24aide.com'; await navigator.clipboard.writeText('hello@24aide.com');
+          event.preventDefault(); copyButton.textContent = 'hello@24aide.com'; try { await navigator.clipboard.writeText('hello@24aide.com'); } catch (error) { try { var fallback = document.createElement('textarea'); fallback.value = 'hello@24aide.com'; fallback.style.position = 'fixed'; fallback.style.opacity = '0'; document.body.appendChild(fallback); fallback.select(); document.execCommand('copy'); fallback.remove(); } catch (fallbackError) {} } window.location.href = 'mailto:hello@24aide.com';
           
         } catch (error) {
           
