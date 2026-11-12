@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24aide — AI answering for home-service shops</title>
+<style>
+  :root { --bg:#0b0d10; --ink:#eef1f4; --muted:#9aa3ad; --line:#23282e; --accent:#7fd08a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; line-height:1.65; }
+  .wrap { max-width:960px; margin:0 auto; padding:64px 24px 96px; }
+  .kicker { color:var(--muted); font-size:13px; letter-spacing:.18em; text-transform:uppercase; }
+  h1 { font-size:clamp(32px,5vw,52px); line-height:1.15; margin:18px 0 16px; font-weight:700; }
+  h1 em { font-style:italic; color:var(--accent); }
+  h2 { font-size:clamp(24px,3.4vw,34px); margin:64px 0 14px; }
+  p.lead { color:var(--muted); font-size:18px; max-width:640px; }
+  .cta { display:inline-block; margin-top:28px; padding:14px 28px; border:1px solid var(--accent); color:var(--accent); text-decoration:none; border-radius:6px; font-weight:600; }
+  .cta small { display:block; font-weight:400; font-size:13px; color:var(--muted); margin-top:4px; }
+  hr { border:none; border-top:1px solid var(--line); margin:64px 0 0; }
+  .stat-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; margin-top:32px; }
+  .stat b { font-size:34px; display:block; }
+  .stat span { color:var(--muted); font-size:15px; }
+  .tiers { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; margin-top:32px; }
+  .tier { border:1px solid var(--line); border-radius:10px; padding:28px 24px; }
+  .tier.featured { border-color:var(--accent); }
+  .tier .tname { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+  .tier .tprice { font-size:36px; margin:10px 0 2px; }
+  .tier .tprice small { font-size:15px; color:var(--muted); }
+  .tier .tinstall { color:var(--muted); font-size:14px; margin-bottom:16px; }
+  .tier ul { list-style:none; }
+  .tier li { padding:7px 0; border-top:1px solid var(--line); font-size:15px; }
+  .tier li:first-child { border-top:none; }
+  .note { color:var(--muted); font-size:14px; margin-top:20px; }
+  .faq dt { font-weight:700; margin-top:22px; }
+  .faq dd { color:var(--muted); margin-top:6px; }
+  .commit { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; margin-top:28px; }
+  .commit div { border-top:2px solid var(--accent); padding-top:14px; }
+  .commit b { display:block; margin-bottom:6px; }
+  .commit p { color:var(--muted); font-size:15px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">AI answering · missed-call text-back · booking</div>
+  <h1>Your next job calls <em>while you're on this one.</em></h1>
+  <p class="lead">A 24/7 AI assistant that answers when your crew can't — texts back missed calls, books the job, and sends you the summary. Built for 1–5 person plumbing, HVAC, and electrical shops.</p>
+  <a class="cta" href="#audit">Book a free missed-call audit ↘<small>No cost · no obligation · written findings in 5 business days</small></a>
+  <p class="note">Or hear it live now: call <b>+1 (213) 768-8979</b> — the AI assistant answering you is the product.</p>
+  <hr>
+  <h2>The leak is on the phone line.</h2>
+  <div class="stat-row">
+    <div class="stat"><b>48%</b><span>of home-service calls never reach a person. (Invoca 2026)</span></div>
+    <div class="stat"><b>$57–66</b><span>is what one plumbing lead costs — and Google has charged unanswered 20s+ calls during business hours as leads since Oct 1, 2026.</span></div>
+    <div class="stat"><b>$1,714</b><span>is the average plumbing ticket a missed call can lose. (SearchLight / 99 Calls)</span></div>
+  </div>
+  <p class="note">Sources: Invoca 2026; Google LSA billing rule (Oct 1, 2026); SearchLight / 99 Calls benchmarks. Your audit measures your own numbers.</p>
+  <hr>
+  <h2>Three plans. All 24/7. Pick by volume and features.</h2>
+  <p class="lead">Every plan answers around the clock. The difference is how much it handles — and how smart the handoff is.</p>
+  <div class="tiers">
+    <div class="tier">
+      <div class="tname">Essential</div>
+      <div class="tprice">$79<small>/month</small></div>
+      <div class="tinstall">One-time setup $300 · 100 minutes/month included</div>
+      <ul>
+        <li>24/7 AI call answering in your shop's name</li>
+        <li>Missed-call text-back</li>
+        <li>Captures name, callback number, address, and the issue</li>
+        <li>Call summary sent to your phone by text</li>
+        <li>Monthly report: calls and texts handled</li>
+      </ul>
+    </div>
+    <div class="tier featured">
+      <div class="tname">Standard — most shops start here</div>
+      <div class="tprice">$149<small>/month</small></div>
+      <div class="tinstall">One-time setup $500 · 250 minutes + 1,000 texts/month</div>
+      <ul>
+        <li>Everything in Essential</li>
+        <li>Booking: offers open times, confirms, writes to your calendar</li>
+        <li>Quote inquiries answered from your rate card</li>
+        <li>Day-before and same-day appointment reminders</li>
+        <li>No-show rebooking by text</li>
+        <li>Monthly report: calls, bookings, no-show rate</li>
+      </ul>
+    </div>
+    <div class="tier">
+      <div class="tname">Pro</div>
+      <div class="tprice">$249<small>/month</small></div>
+      <div class="tinstall">One-time setup $800 · 500 minutes + 2,000 texts/month</div>
+      <ul>
+        <li>Everything in Standard</li>
+        <li>Urgent-call routing — burst pipe or gas-smell keywords trigger an immediate call to you</li>
+        <li>Review-request texts after completed jobs</li>
+        <li>Weekly report by email</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Annual billing saves 10%. Overage minutes billed at $0.30/min, counted per second and rounded up monthly. You keep your existing number — forwarding, a dedicated line, or after-hours-only routing is chosen at setup.</p>
+  <hr>
+  <h2 id="audit">Start with the audit.</h2>
+  <p class="lead">We document where your calls go today — missed calls, voicemail, slow replies — and estimate what the gap is worth with numbers you can verify. If the evidence doesn't show a real problem, the report says so.</p>
+  <a class="cta" href="#audit">Book a free missed-call audit ↘<small>No cost · no obligation · written findings in 5 business days</small></a>
+  <p class="note">Prefer to hear it first? Call <b>+1 (213) 768-8979</b> — the AI assistant answering you is the product.</p>
+  <hr>
+  <h2>Before you ask.</h2>
+  <dl class="faq">
+    <dt>Do I have to change my phone number?</dt>
+    <dd>No. Most shops keep their number and forward unanswered calls to the AI. A dedicated line or after-hours-only routing also works — it's a setup choice, not a plan difference.</dd>
+    <dt>What happens at 2 AM?</dt>
+    <dd>The AI answers, takes the details, and texts you a summary. Urgent keywords on the Pro plan call you immediately; everything else waits for morning.</dd>
+    <dt>Does it work with my scheduling tools?</dt>
+    <dd>It connects to the calendar and job tools named in your scope — confirmed during the audit before you approve anything.</dd>
+    <dt>Is this just an answering service?</dt>
+    <dd>An answering service takes a message. This one texts the caller back, books the job, sends reminders, recovers no-shows, and reports what moved.</dd>
+    <dt>Who sees my customer data?</dt>
+    <dd>You do. Your business data and conversation transcripts remain yours, with a documented export path.</dd>
+  </dl>
+  <hr>
+  <h2>Three commitments, stated plainly.</h2>
+  <div class="commit">
+    <div><b>Five-day findings</b><p>The written audit arrives within 5 business days of a completed intake. If that timing changes, you're told before the deadline.</p></div>
+    <div><b>Honesty</b><p>If the evidence doesn't show a meaningful response problem, the report says so. No system is recommended just to create a project.</p></div>
+    <div><b>Data ownership</b><p>Your business data and transcripts stay yours, with a documented export and transition path.</p></div>
+  </div>
+</div>
+</body>
+</html>
