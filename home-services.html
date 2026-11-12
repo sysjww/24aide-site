@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
 <title>24aide — AI answering for home-service shops</title>
 <style>
   :root { --bg:#0b0d10; --ink:#eef1f4; --muted:#9aa3ad; --line:#23282e; --accent:#7fd08a; }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { background:var(--bg); color:var(--ink); font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; line-height:1.65; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  header { border-bottom:1px solid var(--line); }
+  .nav { max-width:960px; margin:0 auto; padding:18px 24px; display:flex; flex-wrap:wrap; gap:8px 22px; align-items:center; }
+  .nav .brand { font-weight:700; font-size:18px; color:var(--ink); margin-right:auto; }
+  .nav a { color:var(--muted); font-size:15px; }
+  .nav a:hover { color:var(--accent); text-decoration:none; }
+  .nav a.current { color:var(--accent); }
   .wrap { max-width:960px; margin:0 auto; padding:64px 24px 96px; }
   .kicker { color:var(--muted); font-size:13px; letter-spacing:.18em; text-transform:uppercase; }
   h1 { font-size:clamp(32px,5vw,52px); line-height:1.15; margin:18px 0 16px; font-weight:700; }
@@ -37,17 +46,35 @@
   .commit div { border-top:2px solid var(--accent); padding-top:14px; }
   .commit b { display:block; margin-bottom:6px; }
   .commit p { color:var(--muted); font-size:15px; }
+  footer { border-top:1px solid var(--line); }
+  .foot { max-width:960px; margin:0 auto; padding:32px 24px 48px; color:var(--muted); font-size:14px; display:flex; flex-wrap:wrap; gap:8px 22px; align-items:center; }
+  .foot .copy { margin-right:auto; }
+  .foot a { color:var(--muted); }
+  .foot a:hover { color:var(--accent); text-decoration:none; }
 </style>
 </head>
 <body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="index.html">24aide</a>
+    <a href="index.html">Home</a>
+    <a class="current" href="home-services.html">Home services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="#leak">The leak</a>
+    <a href="#plans">Plans</a>
+    <a href="#audit">Audit</a>
+    <a href="#faq">FAQ</a>
+    <a href="tel:+12137688979">+1 (213) 768-8979</a>
+  </nav>
+</header>
 <div class="wrap">
   <div class="kicker">AI answering · missed-call text-back · booking</div>
   <h1>Your next job calls <em>while you're on this one.</em></h1>
   <p class="lead">A 24/7 AI assistant that answers when your crew can't — texts back missed calls, books the job, and sends you the summary. Built for 1–5 person plumbing, HVAC, and electrical shops.</p>
   <a class="cta" href="#audit">Book a free missed-call audit ↘<small>No cost · no obligation · written findings in 5 business days</small></a>
-  <p class="note">Or hear it live now: call <b>+1 (213) 768-8979</b> — the AI assistant answering you is the product.</p>
+  <p class="note">Or hear it live now: call <b><a href="tel:+12137688979">+1 (213) 768-8979</a></b> — the AI assistant answering you is the product.</p>
   <hr>
-  <h2>The leak is on the phone line.</h2>
+  <h2 id="leak">The leak is on the phone line.</h2>
   <div class="stat-row">
     <div class="stat"><b>48%</b><span>of home-service calls never reach a person. (Invoca 2026)</span></div>
     <div class="stat"><b>$57–66</b><span>is what one plumbing lead costs — and Google has charged unanswered 20s+ calls during business hours as leads since Oct 1, 2026.</span></div>
@@ -55,7 +82,7 @@
   </div>
   <p class="note">Sources: Invoca 2026; Google LSA billing rule (Oct 1, 2026); SearchLight / 99 Calls benchmarks. Your audit measures your own numbers.</p>
   <hr>
-  <h2>Three plans. All 24/7. Pick by volume and features.</h2>
+  <h2 id="plans">Three plans. All 24/7. Pick by volume and features.</h2>
   <p class="lead">Every plan answers around the clock. The difference is how much it handles — and how smart the handoff is.</p>
   <div class="tiers">
     <div class="tier">
@@ -100,9 +127,9 @@
   <h2 id="audit">Start with the audit.</h2>
   <p class="lead">We document where your calls go today — missed calls, voicemail, slow replies — and estimate what the gap is worth with numbers you can verify. If the evidence doesn't show a real problem, the report says so.</p>
   <a class="cta" href="#audit">Book a free missed-call audit ↘<small>No cost · no obligation · written findings in 5 business days</small></a>
-  <p class="note">Prefer to hear it first? Call <b>+1 (213) 768-8979</b> — the AI assistant answering you is the product.</p>
+  <p class="note">Prefer to hear it first? Call <b><a href="tel:+12137688979">+1 (213) 768-8979</a></b> — the AI assistant answering you is the product.</p>
   <hr>
-  <h2>Before you ask.</h2>
+  <h2 id="faq">Before you ask.</h2>
   <dl class="faq">
     <dt>Do I have to change my phone number?</dt>
     <dd>No. Most shops keep their number and forward unanswered calls to the AI. A dedicated line or after-hours-only routing also works — it's a setup choice, not a plan difference.</dd>
@@ -116,12 +143,23 @@
     <dd>You do. Your business data and conversation transcripts remain yours, with a documented export path.</dd>
   </dl>
   <hr>
-  <h2>Three commitments, stated plainly.</h2>
+  <h2 id="commitments">Three commitments, stated plainly.</h2>
   <div class="commit">
     <div><b>Five-day findings</b><p>The written audit arrives within 5 business days of a completed intake. If that timing changes, you're told before the deadline.</p></div>
     <div><b>Honesty</b><p>If the evidence doesn't show a meaningful response problem, the report says so. No system is recommended just to create a project.</p></div>
     <div><b>Data ownership</b><p>Your business data and transcripts stay yours, with a documented export and transition path.</p></div>
   </div>
 </div>
+<footer>
+  <div class="foot">
+    <span class="copy">© 2026 24aide. All rights reserved.</span>
+    <a href="index.html">Home</a>
+    <a href="home-services.html">Home services</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="#audit">Free audit</a>
+    <a href="mailto:hello@24aide.com">hello@24aide.com</a>
+    <a href="tel:+12137688979">+1 (213) 768-8979</a>
+  </div>
+</footer>
 </body>
 </html>
