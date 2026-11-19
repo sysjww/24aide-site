@@ -32,7 +32,7 @@ const SCENARIOS = {
     "Yeah, send it over. What do you need from me?",
     "david@peakair.com. Mobile is 303-555-0182."
   ]},
-  s3: { voice: "Polly.Justin", lines: [
+  s3: { voice: "Polly.Matthew", lines: [
     "Hi, I'm a one-man electrician out in Phoenix. What's your cheapest plan?",
     "Tom Reyes. It's just me, no office staff. I get maybe 80 calls a month.",
     "Me or my wife, when she can. But I'm up a ladder half the day, and she's got her own job. We miss plenty.",
