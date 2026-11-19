@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say voice="Polly.Matthew">Hi, I saw your ad. I run a plumbing company in Dallas, and I keep missing calls while my crew is out on jobs. Can you tell me how this works?</Say>
+  <Record action="https://24aide.com/sim/texml-test-3.xml" method="GET" timeout="5" maxLength="90" playBeep="false" trim="trim-silence"/>
+</Response>
