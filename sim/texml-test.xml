@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-  <Record timeout="5" maxLength="30" playBeep="false" trim="trim-silence"/>
-  <Say voice="Polly.Matthew">Hi, I saw your ad. I run a plumbing company in Dallas, and I keep missing calls while my crew is out on jobs. Can you tell me how this works?</Say>
-  <Record timeout="5" maxLength="90" playBeep="false" trim="trim-silence"/>
-  <Say voice="Polly.Matthew">I'm Mike Dawson, Mike's Plumbing. There are three of us.</Say>
-  <Record timeout="5" maxLength="90" playBeep="false" trim="trim-silence"/>
-  <Hangup/>
+  <Record action="https://24aide.com/sim/texml-test-2.xml" method="GET" timeout="5" maxLength="30" playBeep="false" trim="trim-silence"/>
 </Response>
