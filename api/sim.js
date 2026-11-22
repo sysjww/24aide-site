@@ -92,6 +92,12 @@ const SCENARIOS = {
   d4: { voice: "Polly.Joanna", lines: [
     "Umm... I just wanted to see what this is.",
     "I don't have a business. I was just curious."
+  ]},
+  d5: { voice: "Polly.Matthew", lines: [
+      "I'm a plumber. Small shop in Dallas.",
+    "Actually, before I play the customer — how much does 24aide cost?",
+    "Can you give me that phone number again?",
+    "Thanks, got it. Bye."
   ]}
 };
 
