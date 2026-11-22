@@ -58,6 +58,40 @@ const SCENARIOS = {
     "James Park. 469-555-0176. Dallas.",
     "No, nobody's hurt. But the water's coming up fast.",
     "Yes. In the laundry room."
+  ]},
+  // Demo-line scenarios (2026-11-22) — caller first answers the trade
+  // question, then plays a customer calling that business. Target number:
+  // +1 213 315 6726 (24aide Demo Line). Voices: Matthew/Joey/Joanna only
+  // (Polly.Justin stalls the TeXML chain).
+  d1: { voice: "Polly.Matthew", lines: [
+    "I run a plumbing company in Dallas.",
+    "Hi, my kitchen sink is leaking underneath. Can someone come out tomorrow morning?",
+    "I'm John Miller. My number is 214-555...",
+    "0163.",
+    "4210 Oak Lawn Avenue, Dallas.",
+    "Tomorrow morning, around 9.",
+    "Yes, that's all correct. Thank you."
+  ]},
+  d2: { voice: "Polly.Joey", lines: [
+    "I run an HVAC company in Denver.",
+    "Hi, my AC stopped working yesterday. It's blowing warm air.",
+    "How much does a repair visit cost?",
+    "Okay. Can I book a visit for Thursday afternoon?",
+    "David Chen. My number is 303-555-0182.",
+    "88 Elm Street, Denver.",
+    "Yes, Thursday afternoon is fine."
+  ]},
+  d3: { voice: "Polly.Matthew", lines: [
+    "I'm an electrician, one-man shop in Phoenix.",
+    "There's sparking coming from an outlet in my bedroom! I can smell burning!",
+    "Nobody's hurt. But I'm worried it could start a fire.",
+    "Tom Reyes. My number is 602-555-0149.",
+    "I'm at 12 Desert View Road, Phoenix.",
+    "Okay, I'll call 911. Thank you."
+  ]},
+  d4: { voice: "Polly.Joanna", lines: [
+    "Umm... I just wanted to see what this is.",
+    "I don't have a business. I was just curious."
   ]}
 };
 
